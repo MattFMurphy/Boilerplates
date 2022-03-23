@@ -1,0 +1,6 @@
+node_modules
+dist
+bundle.js
+main.js.LICENSE.txt
+**/public/main.*.hot-update.json
+**/public/main.*.hot-update.js

@@ -1,0 +1,63 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "React boilerplate setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode=development --config ./webpack_configs/webpack.serve.config.js",
+    "serve": "webpack serve --mode=development --config ./webpack_configs/webpack.serve.config.js",
+    "build:dev": "webpack --mode=development --config ./webpack_configs/webpack.dev.config.js",
+    "build:prod": "webpack --mode=production  --config ./webpack_configs/webpack.production.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "automock": false,
+    "setupFiles": [
+      "./jest_setup.js"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "author": "Matt Murphy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.8",
+    "@testing-library/react": "^12.1.4",
+    "@webpack-cli/generators": "^2.4.2",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-fetch": "^3.2.3",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
